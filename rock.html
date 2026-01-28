@@ -11,6 +11,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<script>
+function toggleAudio(id) {
+  const audio = document.getElementById(id);
+
+  // Pause all other audio
+  document.querySelectorAll("audio").forEach(a => {
+    if (a !== audio) {
+      a.pause();
+      a.currentTime = 0;
+    }
+  });
+
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+}
+</script>
+
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -32,7 +53,11 @@
 							<ul>
 								<li><a href="index.html" id="abstract-link"><span>Abstract</span></a></li>
 								<li><a href="intro.html"id="intro-link"><span>Introducción</span></a></li>
-								<li><a href="rock.html" id="rock-link"><span>Rock</span></a></li>
+								<li>
+						<a href="rock.html" id="rock-link" class="active" aria-current="page">
+							<span>Rock</span>
+						</a>
+								</li>
 								<li><a href="hiphop.html" id="hiphop-link"><span>Hip-Hop</span></a></li>
 								<li><a href="kpop.html" id="kpop-link"><span>K-Pop</span></a></li>
 								<li><a href="conclusion.html" id="conclusion-link"><span>Conclusión</span></a></li>
@@ -68,14 +93,224 @@
 								<h2>El caso del Reino Unido: rock como marca cultural</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>Como he mencionado previamente en la introducción a este trabajo, mi doble titulación 
+							en Francia me puso en proximidad al Reino Unido, lo que me permitió visitar el país antes de
+							volver a Argentina. En esta oportunidad, pude recorrer la escena musical en Londres, donde 
+							obtuve no sólo información valiosa, sino que también experiencias y apoyos visuales para 
+							comprender los espacios donde se desarrolló la historia. </p>
+							
+						<figure class="image featured">
+							<img src="images/rock01.jpg" alt="Escena musical en Londres">
+							<figcaption>
+							<em>Fuente de la imagen: Fotografía propia, tomada fuera de The Ship en Londres, un bar
+							emblemático por donde varias estrellas de rock como Keith Moon de The Who han pasado.</em>
+							</figcaption>
+						</figure>
+						<p>Incluso estando en Argentina, siempre consideré al Reino Unido como el mayor exponente de 
+						la música rock. Siendo aficionada por la música, este aspecto del entretenimiento británico 
+						fue por mucho tiempo uno de los mayores puntos de atracción y fascinación por la cultura. Puedo
+						afirmar con seguridad que hay miles de casos como el mío - una multitud que siente un apego al 
+						Reino Unido en base a la música que ha logrado convertir en un producto cultural a exportar al 
+						resto del mundo. Se evidencia esto en la popularidad de los foros de discusión musical británicos, 
+						como <em>PopJustice, UKMIX,</em> y <em>Digital Spy</em>, que hasta el día de hoy, incluso con la
+						prevalencia de las redes sociales, han logrado mantenerse activos y al centro de la atención de
+						críticos y artistas. </p>
+						<p>El caso del rock como género es fascinante en el sentido de que, si bien es un estilo musical
+						trazable a Estados Unidos en sus orígenes, hoy se asocia más fuertemente con el Reino Unido. Es
+						a causa de este fuerte impacto de los músicos británicos en la esfera del rock y el resto del 
+						mundo que he decidido enfocar mi estudio de caso en este país, demostrando mi hipótesis de que 
+						la música, cargada de significado, puede trascender fronteras e insertarse en diferentes 
+						configuraciones culturales.</p>
+						<p></p>
+						<h3>Concepto del rock</h3>
+						<p></p>
+						<p>Para adecuarse a los propósitos de este trabajo, es necesario definir el rock como género, lo
+						cual presenta dificultades tanto a nivel semántico como a nivel ideológico y conceptual. BBC define
+						al rock como un estilo musical derivado del rock and roll, en principio. Este término data del 
+						siglo XVII, y era usado por marineros para referirse al movimiento rítmico de un barco navegando.
+						Alrededor de 1920, el término se utilizaba para hablar de baile o eufemismos sexuales, y no fue
+						hasta los 1950s que “rock and roll” comenzó a aludir a un tipo de música similar al country con 
+						influencias de blues y R & B. (McAlpine, 2017)</p>
+						<p>Establecer una definición simple y exacta del género se dificulta precisamente porque es una
+						forma de música popular que, en sus orígenes era subversiva, y al día de hoy es parte del <em>mainstream</em>,
+						o música de consumo con alcance masivo. Según Simon Frith, crítico musical de la Universidad de 
+						Edimburgo, lo único que puede decirse sobre el rock con certeza es que se trata de un género 
+						musical con un ritmo fuerte, sobre todo en el caso de la escena de rock británica, donde el 
+						nombre abarca un rango de estilos más amplio que en Estados Unidos. Cuando lo intentamos definir 
+						desde una mirada estilística, se dificulta alcanzar conclusiones dado que consideramos a los 
+						Beatles como una banda de rock para este estudio, y tienen pocas similitudes sonoras con otros
+						clásicos del género como Jimi Hendrix. Aún más complejo es intentar describir al rock a partir 
+						de su significación desde el punto de vista del artista o los oyentes, debido a que, lo que antes
+						fue un género para la rebelión, es hoy universalmente aceptado y sin duda más comercial. 
+						(Frith, 1999)</p>
+						<p>Queda entonces la posibilidad de definir a la música en torno a sus características instrumentales.
+						BBC cita a la guitarra eléctrica, el bajo y la batería como los componentes principales de una canción
+						de rock. Cita también la importancia de la estructura musical, indicando que una canción de rock suele
+						tener versos, un estribillo y ocasionalmente, un puente antes del final. El último elemento que destaca 
+						al rock de otros géneros según esta definición es el uso de la distorsión en el sonido de las guitarras,
+						dándoles un sonido más áspero. (BBC, 2017) Frith, sin embargo, considera que el mejor punto de partida 
+						para definir a este elusivo género es la tecnología empleada en su producción, es decir, el trabajo de 
+						los ingenieros de sonido, la lucha contra los límites de amplificación sonora en las grabaciones, y el
+						desarrollo de nuevos instrumentos electrónicos, como los tocadiscos de dos pisos y las cajas de ritmos. 
+						(Frith, 1999)</p>
+						<p>Acorde a los fines de este trabajo, es necesario crear una definición simplificada que no pierda la
+						complejidad y exactitud esperada. Es por este motivo que, para esta investigación, voy a definir al rock
+						como un género musical con fuertes ritmos caracterizado por su uso revolucionario de las tecnologías de
+						producción musical, incluyendo los sistemas de amplificación y las guitarras eléctricas.</p>
+						<p></p>
+						<h3>Historia del rock</h3>
+						<p></p>
+						<p>Sería inadecuado hablar sobre el rock como género sin primero adentrarse en sus orígenes. Como
+						es común a la hora de realizar estudios sobre fenómenos modernos, se dificulta encontrar fuentes
+						extensas que cubran una historia lineal. Sin embargo, considero que <em>The Rolling Stone Illustrated 
+						History of Rock and Roll</em> (la historia ilustrada del rock and roll), publicada en 1980, presenta un 
+						excelente recorrido a lo largo de las raíces de este género. En su capítulo titulado <em>Rock Begins</em>, 
+						Robert Palmer provee una línea de tiempo con ejemplos para explicar el surgimiento gradual de varios
+						elementos cruciales en la formación del rock como género. A continuación, se hará una breve
+						recapitulación de su cronología, para dar contexto a las raíces de nuestro estudio de caso.</p>
+						<p>El origen de la música rock es, de cierto modo, un resultado directo de la interacción sociocultural
+						entre blancos y negros en el sur y el suroeste estadounidense. Resulta interesante dibujar una especie
+						de “reacción en cadena” en el rock - la música de las iglesias negras influenció a los blues, luego los
+						blues y la música pop negra influenciaron el jazz, que a su vez dio origen al rock.</p>
+						<figure class="image featured">
+							<img src="images/rock02.png" alt="Evolución del género">
+							<figcaption>
+							<em>Fuente de la imagen: Gráfico visualizador de elaboración propia en base a la información.</em>
+							</figcaption>
+						</figure>
+						<p>Sumando a esta proposición del rock como un choque entre culturas, está el hecho de que muchas de 
+						sus características principales estaban incluidas en la música que llegó desde África, como por ejemplo
+						el concepto de música “participatoria”, donde un cantante principal se dirige a un coro esperando una 
+						respuesta. Un ejemplo temprano del rock incorporando esta característica es <u><em>
+						<span class="audio-link" onclick="toggleAudio('raycharles1')">
+						What’d I Say
+						</span>
+						</em></u> (1959) de Ray
+						Charles, que además de tener un coro respondiendo al cantante, utiliza un estilo vocal áspero, también
+						típico en la tradición musical africana. <u><em>
+						<span class="audio-link" onclick="toggleAudio('isleybrothers1')">
+						Shout
+						</span>
+						</em></u>
+						de The Isley Brothers (1959) es similar en sus cantos de
+						coro acompañados por una banda, con influencias de música gospel negra. </p>
+						<audio id="raycharles1" src="music/raycharles1.mp3"></audio>
+						<audio id="isleybrothers1" src="music/isleybrothers1.flac"></audio>
+						<p>Por otra parte, la estructura musical de los prototipos del rock se originó a partir de los blancos.
+						Los colonos europeos trajeron sus tradiciones originarias de la poesía épica y baladas narrativas, con
+						sus canciones compuestas por estrofas de cuatro a ocho líneas. A diferencia de la música africana, este
+						estilo europeo utilizaba una narración impersonal, donde el intérprete contaba una historia de la cual
+						no era parte. Antes de la guerra civil, estas preferencias musicales fueron presentadas a los músicos 
+						negros, que usaron la adaptabilidad de la música africana a su favor para componer melodías que 
+						agradaran a sus patrones blancos. Combinaron banjos y otros instrumentos de percusión, logrando 
+						atrapar a un nuevo público.</p>
+						<p>En las primeras décadas del siglo XX, comenzaron a surgir las canciones de una estrofa, un nuevo 
+						tipo de música secular negra que repetía la misma línea varias veces. Se trataba de una repetición 
+						del fenómeno mencionado anteriormente, con los negros intentando adaptarse a las preferencias de 
+						los blancos. A estas canciones de una estrofa comenzaron a agregar el acompañamiento de las guitarras,
+						dando origen a la música que hoy conocemos como <em>blues</em>. En los años ‘20, la industria de la grabación 
+						aceleró la combinación de diferentes estilos, marcando el paso hacia un modelo donde las grabaciones 
+						eran una fuente de inspiración y no sólo una forma de documentar la evolución estilística de la 
+						música. Los blues sufrieron grandes cambios con la urbanización en forma de los llamados <em>Memphis 
+						blues</em>, ya que muchos artistas incorporaron en su obra elementos de la vida acelerada de la ciudad,
+						como ritmos más rápidos y pesados. Después de los blues, surgió el jazz, caracterizado por sus 
+						ritmos sincopados y sensuales. (Cabrelles Sagredo, 2016) A partir de estos últimos dos estilos,
+						aparecieron las primeras raíces concretas del rock.</p>
+						<p>Palmer inicia el nacimiento de los prototipos del rock en las iglesias negras de Estados Unidos 
+						en los años ‘30. En aquel entonces, los cantos espirituales estaban comenzando a influenciar la música
+						secular en el sur rural del país. En Mississippi, una agrupación llamada <u><em>
+						<span class="audio-link" onclick="toggleAudio('jookband')">
+						Mississippi Jook Band
+						</span>
+						</u></em> 
+						se juntó por primera y última vez a realizar grabaciones de blues con riffs de guitarra y ritmos “pisotones” en
+						1936. Hoy en día, puede encontrarse un cartel en el lugar de grabación, llamando al sitio “las raíces
+						del rock and roll”.</p>
+						<audio id="jookband" src="music/jookband.mp3"></audio>
+						<figure class="image featured">
+							<img src="images/rock03.jpg" alt="Mississppi">
+							<figcaption>
+							<em>Fuente de la imagen: https://www.mississippibluestravellers.com/rumble-videos/mississippi-jook-band-recordings-from-1936-on-our-rumble-channel/  </em>
+							</figcaption>
+						</figure>
+						<p>Como es el caso de Mississippi Jook Band, se pueden encontrar muchas raíces del rock en distintos 
+						puntos de los Estados Unidos en los años ‘30. Estos primeros pasos hacia el rock como género se 
+						encontraban en la música popular y folklórica de aquel entonces. Un ejemplo de música acelerada con
+						guitarras y sonidos bajos abrasivos serían los Delmore Brothers con <u><em>
+						<span class="audio-link" onclick="toggleAudio('jookband')">
+						Brown’s Ferry Blues
+						</span>
+						</u></em> 
+						(1934) en Nashville, la ciudad hoy conocida como la capital de la música country. En Texas, las bandas de
+						Bob Willis y Milton Brown estaban produciendo grabaciones de blues que ya mostraban progresiones 
+						de acordes similares a las que dieron base a las primeras canciones de rock and roll. Estos últimos
+						mezclaban elementos de jazz, blues negros y música country blanca, evidenciando la teoría de que el
+						rock es el resultado de una convergencia cultural.</p>
+						<audio id="ferryblues" src="music/ferryblues.mp3"></audio>
+						<p>En 1938, el músico Eddie Durham comenzó a experimentar con la guitarra eléctrica, una característica
+						definitiva de lo que sería el rock and roll para el resto de los tiempos. Grabó los primeros solos de 
+						guitarra de la historia. Cerca de estas fechas, T-Bone Walker creó las guitarras resonantes que luego 
+						se volverían un arquetipo del rock. En las zonas urbanas de la costa oeste, donde muchos negros se 
+						mudaron a causa de la industria de la guerra, los afroamericanos no se sentían a gusto con las bandas 
+						de jazz sofisticadas que predominaban en aquel entonces. Por este motivo, para los años ‘40, la música 
+						negra comenzó a estar dominada por blues con saxofones y solos de guitarra derivados de T-Bone Walker.
+						Estas combinaciones pronto obtuvieron alcance nacional y dieron lugar a los llamados <em>jump blues</em>, un 
+						estilo musical que podría prácticamente considerarse rock debido a sus similitudes.</p>
+						<p>Para los inicios de los ‘50, Memphis comenzó a desarrollarse como un nuevo lecho de actividad
+						musical, donde un nuevo estilo de blues emergió, con sonidos aún más fuertes y disruptivos que 
+						aquellos de la costa oeste. Artistas como BB King, Bobby “Blue” Bland y Roscoe Gordon fueron 
+						exponentes de este movimiento, así como también Delta Rhythm Kings, que se inspiraron en los
+						jump blues de la costa oeste para crear su éxito <u><em>
+						<span class="audio-link" onclick="toggleAudio('rocket88')">
+						Rocket 88 
+						</span>
+						</u></em> 
+						en 1951. Esta pieza pasó a ser tanto
+						un éxito de rhythm and blues (otro género afroamericano similar a los blues pero con mayor 
+						énfasis en los instrumentales) como el “primer disco de rock and roll”. Al año siguiente, 
+						Bill Haley and the Saddlemen lanzaron su canción <u><em>
+						<span class="audio-link" onclick="toggleAudio('joint')">
+						Rock the Joint,
+						</span>
+						</u></em> 
+						que incluso bajo definiciones modernas puede considerarse una auténtica composición de rock. </p>
+						<audio id="joint" src="music/joint.flac"></audio>
+						<p>En esta misma década, algunos DJs blancos como Alan Freed comenzaron a exponer a un público
+						adolescente racialmente mixto a los sonidos de la música negra, agilizando aún más su difusión. 
+						Al día de hoy, Freed es considerado como uno de los padres del rock, y parcialmente responsable 
+						por su popularización gracias a su programa de radio. Freed popularizó también la expresión 
+						“rock and roll” para referirse a este género naciente, diferenciándolo de los rhythm and blues.
+						(Hill, 1986) Para 1954, la música en las radios de rhythm and blues comenzó a ser más explícita
+						y desafiante, marcando un cambio significativo en la escena musical estadounidense. </p>
+						<p>En 1955, Bill Haley lanzó <u><em>
+						<span class="audio-link" onclick="toggleAudio('clock')">
+						Rock around the Clock, 
+						</span>
+						</u></em> 
+						el éxito de rock and roll blanco por 
+						excelencia, tomando inspiración del R&B neoyorkino, a su vez influenciado por la música del 
+						sur. Ese mismo año, Elvis Presley lanzó <u><em>
+						<span class="audio-link" onclick="toggleAudio('forgot2remember')">
+						I Forgot to Remember to Forget, 
+						</span>
+						</u></em> 
+						marcando el inicio 
+						simbólico de una nueva era: la era del <em>rock and roll mainstream</em>. Subsecuentemente, Elvis, 
+						Berry and Domino y Little Richard llegaron a obtener puestos en las listas musicales en 1956,
+						ayudando así a que el rock florezca gracias a las influencias del sur y suroeste. Estas 
+						primeras canciones de rock en alcanzar las listas estuvieron inspiradas en la música country 
+						blanca y los blues negros; a modo de ejemplo, las obras de Little Richard tenían pocas diferencias
+						con los blues puros, mientras que Chuck Berry experimentaba con guitarras similares a las de
+						T-Bone Walker. (Palmer, 1980)</p>
+						<audio id="clock" src="music/clock.flac"></audio>
+						<audio id="forgot2remember" src="music/forgot2remember.flac"></audio>
+						<p>Con una historia formativa que se expande a lo largo de más de tres décadas, las complejas
+						interacciones culturales y estilísticas que conformaron al rock explican su alcance y atractivo
+						masivo. Compuesto por aspectos derivados de diferentes sectores sociales, grupos etáreos y regiones 
+						geográficas, el rock tenía todos los ingredientes para apelar a una multiplicidad de identidades, 
+						en un principio en Estados Unidos, luego en el resto del mundo. </p>
+						<p></p>
+						
 
 						</div>
 					</section>
