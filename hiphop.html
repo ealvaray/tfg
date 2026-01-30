@@ -11,6 +11,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<script>
+function toggleAudio(id) {
+  const audio = document.getElementById(id);
+
+  // Pause all other audio
+  document.querySelectorAll("audio").forEach(a => {
+    if (a !== audio) {
+      a.pause();
+      a.currentTime = 0;
+    }
+  });
+
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+}
+</script>
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -33,7 +53,11 @@
 								<li><a href="index.html" id="abstract-link"><span>Abstract</span></a></li>
 								<li><a href="intro.html"id="intro-link"><span>Introducción</span></a></li>
 								<li><a href="rock.html" id="rock-link"><span>Rock</span></a></li>
-								<li><a href="hiphop.html" id="hiphop-link"><span>Hip-Hop</span></a></li>
+								<li>
+									<a href="hiphop.html" id="hiphop-link" class="active" aria-current="page">
+									<span>Hip-Hop</span>
+								</a>
+								</li>
 								<li><a href="kpop.html" id="kpop-link"><span>K-Pop</span></a></li>
 								<li><a href="conclusion.html" id="conclusion-link"><span>Conclusión</span></a></li>
 								<li><a href="biblio.html" id="biblio-link"><span>Bibliografía</span></a></li>
@@ -43,15 +67,6 @@
 				</div>
 				
 				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
 
 				</div>
 
@@ -68,23 +83,332 @@
 								<h2>El caso de Estados Unidos: hip-hop como identitario social</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
+							<p>Anteriormente hablamos sobre rock, considerado un género clásico, que data de la
+							década del 1950 en Estados Unidos. El hip-hop tiene un comienzo un tanto más reciente,
+							nacido en los ‘70, y es también originalmente estadounidense, pero sus raíces difieren 
+							en gran medida, y su nivel de aceptación en el mundo es otro. Al día de hoy, el hip-hop 
+							como estilo está incluído de cierto modo en otros géneros musicales; una canción pop 
+							promedio de hace 10 años podría tener versos o un puente casi estrictamente hip-hop
+							en su naturaleza, ya sea con la inclusión de un rap o un break. El k-pop, otro de 
+							los géneros musicales de los que hablaremos en este trabajo, tiene sus raíces y la 
+							mayoría de sus musas en el hip-hop. Sería difícil conceptualizar un mundo de la música
+							del día de hoy sin la presencia e influencia de este género, tan controversial como 
+							emblemático. </p>
+							<p>La elección de este género para ilustrar el concepto de identidades formadas 
+							alrededor de la música se basa en gran parte en el hecho de que el hip-hop es
+							expresivo de los sentimientos de las comunidades callejeras estadounidenses y todas 
+							aquellas adversidades que comparten y sufren en conjunto. Si bien no todo quien 
+							escucha hip-hop ávidamente tiene una conexión personal con las graves problemáticas 
+							y expresiones de descontento social en torno de las cuales se construyen las letras
+							y los relatos del género, la realidad es que la expresión directa e ilimitada de la
+							lucha humana resulta fascinante y conmovedora para todo aquel que preste su oído con
+							una mente abierta y una predisposición por la empatía.</p>
+							<p>El hip-hop es uno de mis géneros favoritos, y uno de los que más me atraen a la 
+							hora de crear mis hábitos personales de escucha musical. Considero que la influencia
+							del hip-hop no sólo a nivel social, sino que a nivel musical, está severamente
+							subestimada. El propósito de esta sección del trabajo es, entonces, traer a la luz
+							el verdadero poder de este género sobre las personas que tienen contacto con su mundo,
+							no sólo aquellos que lo crean, sino que también quienes lo viven a través de las ideas
+							y sentimientos de los artistas que tanto respetamos.</p>
+							<p></p>
+							<h3>Concepto del hip-hop</h3>
+							<p></p>
+							<p>Antes de adentrarnos en el surgimiento del hip-hop y las razones por las que es motivo
+							de tal unidad en las comunidades callejeras estadounidenses, es necesario delimitar a qué
+							entendemos exactamente por este género musical, así como también dejar definidos otros 
+							términos relevantes para el género. El diccionario de Cambridge provee una definición 
+							sencilla: “un estilo de música popular con ritmos fuertes en el cual las letras son
+							habladas en lugar de cantadas, y la temática de las canciones es a menudo la política 
+							o la sociedad.” (Cambridge Dictionary, s.f.) Considero que, si bien concisa y simple
+							de comprender, esta definición no logra captar todas las complejidades y requisitos del
+							género, y no se ajusta adecuadamente a los propósitos de este trabajo. Siendo que el 
+							aspecto de cohesión social y unidad es una parte crucial del género en mi opinión, creo 
+							necesario incluirlo en su conceptualización. </p>
+							<p>BBC define al hip-hop como un estilo musical que se enfoca más en el ritmo que en la 
+							melodía y armonía. Sus características principales son los raps (una recitación rítmica
+							semi-hablada con rimas), las bases rítmicas programadas, los DJs y los fragmentos 
+							musicales (por ejemplo, partes de otras canciones, sonidos de guitarras o secciones 
+							instrumentales que pueden repetirse con un dispositivo llamado sampler). (BBC, 2020) 
+							Esta definición hace un buen trabajo en delimitar las características técnicas y 
+							estrictamente musicales del hip-hop, pero elimina por completo la cuestión de las 
+							temáticas. </p>
+							<p>La definición presentada por Greg Tate, escritor neoyorkino en <em>Britannica,</em>
+							es más acertada en su referencia a las temáticas e implicaciones sociales del hip-hop:
+							lo define no como una simple música de fondo para el rap, sino que se trata de una cultura 
+							compleja compuesta por varios elementos, de la cual los raps son el componente artístico
+							más influyente a largo plazo. Su definición, basada en la teoría de uno de los mayores 
+							exponentes originales del hip-hop, Afrika Bambaataa, se adentra en detalles que nos 
+							resultan útiles para este trabajo. Si nos aproximamos a estos componentes formadores
+							del hip-hop, encontramos lo siguiente:</p>
+							<ul>
+								<li>la actividad de DJ, caracterizada por el uso de tocadiscos para mezclar fragmentos
+								de percusión de canciones clásicas con elementos de música popular para crear un flujo
+								musical continuo;</li>
+								<li>el rap, que definimos previamente (su nombre proviene de la abreviación de <em>rhythm
+								and poetry,</em> o ritmo y poesía);</li>
+								<li>los graffitis, una forma de arte callejero;</li>
+								<li>el <em>B-boying,</em> el estilo de baile y actitud asociados al hip-hop, notorio por la
+								ejecución de acrobacias aéreas o giros sobre la cabeza de los bailarines;</li>
+								<li>y finalmente, un elemento de autoconocimiento y consciencia, principalmente resaltado 
+								y tomado en consideración por artistas y autores más socialmente inclinados.</li>
+							</ul>
+							<p>Las técnicas usadas por los DJs en el contexto del hip-hop fueron creadas para favorecer 
+							el baile y rap interpretativo. Los DJs tomaban los llamados <em>breaks</em> (la parte de una 
+							canción donde todos los instrumentos se detienen excepto por la percusión) y los extendían para 
+							permitir que los artistas improvisen, ya sea con rap o baile. De esta práctica se originó el 
+							término <em>breakdance</em> (entendido como el baile que se realiza al son de los breaks), uno
+							de los aspectos cruciales del <em>B-boying.</em> Los sonidos de <em>scratching,</em> otro
+							elemento predominante en la escena del hip-hop, surgieron como resultado de esta extensión 
+							de los breaks; se usaban tocadiscos con plato doble, donde se reproducían dos copias del mismo 
+							disco para cambiar entre uno y otro, repitiendo el break dos veces. Al usar un tocadiscos, el
+							ruido resultante de la aguja cayendo sobre el vinilo se convirtió en un sonido emblemático del
+							hip-hop. (Tate, 2025)</p>
+						<figure class="image featured">
+							<img src="images/hiphop01.png" alt="Tocadiscos">
+							<figcaption>
+							<em>Fotografía del equipo que usaba DJ Kool Herc. Fuente de imagen:
+							https://www.mcintoshlabs.com/about/news/DJ-Kool-Herc-McIntosh-MC2300-System </em>
+							</figcaption>
+						</figure>
+						<p>Volviendo a la idea de conciencia y autoconocimiento, considero que este es un elemento central
+						a la hora de investigar el efecto de la música hip-hop sobre la esfera social. El autoconocimiento
+						y conciencia de los que se habla en el hip-hop se refieren a la introspección que viene de trasfondo
+						en la actividad de expresarse a sí mismo por medio de improvisaciones, tanto en baile como en lírica.
+						Como bien menciona la definición de Cambridge, a menudo encontramos letras sobre la política y la
+						sociedad en nuestro sujeto de estudio. Siendo que este es un estilo musical callejero, es de esperar
+						que en sus raíces se encuentre también el descontento social. Como exploraremos más tarde en la
+						sección de corroboración de la hipótesis, no existe mejor espacio para formar identidades que uno 
+						donde se alienta la expresión genuina, sin censura o planificación.</p>
+						<p>Habiendo dejado estas cuestiones estilísticas en concreto, podemos crear una definición del 
+						hip-hop adecuada a nuestros propósitos. Para este trabajo, resulta apropiado definir al hip-hop como
+						un género musicalmente caracterizado por el énfasis en los ritmos, la dirección a cargo de los DJs,
+						el uso de fragmentos musicales y el acompañamiento del rap, rodeado por una cultura callejera que
+						incluye a su vez el baile breakdance, el arte graffiti y una expresión de conciencia.</p>
+						<p></p>
+						<h3>Historia del hip-hop</h3>
+						<p></p>
+						<p>La historia del hip-hop puede remontarse a la década de los ‘70 en el Bronx de Nueva York, 
+						Estados Unidos. Similarmente al caso del rock, el hip-hop tuvo sus orígenes en la juventud y fue el 
+						resultado de una combinación de elementos de diferentes culturas. Sumando a estas similitudes, el
+						hip-hop también tiene fuertes raíces en la música tradicional africana, así como también en los 
+						blues y el R&B. (Tate, 2025) A diferencia del rock, sin embargo, el hip-hop tiene un hito particular
+						atribuido a sus comienzos, un inicio indisputable, aunque un tanto mitificado y envuelto en 
+						fantasía: se trata de la fiesta de regreso a clases organizada por Clive Campbell, conocido como 
+						DJ Kool Herc, y su hermana Cindy en agosto de 1973, en el espacio común de su departamento en el
+						Bronx Oeste. Si bien se estima que sólo alrededor de 40 a 100 personas asistieron a esta fiesta,
+						fue un punto que cambió el curso de la historia. (Laurence, 2023)</p>
+						<figure class="image featured">
+							<img src="images/hiphop02.png" alt="Invitación Kool Herc">
+							<figcaption>
+							<em>Fuente de la imagen: https://www.instagram.com/p/CvzullwI2H3/</em>
+							</figcaption>
+						</figure>
+						<p>El contexto que dio paso a esta fiesta no fue nada sencillo. En los años ‘60, los grupos 
+						radicales negros habían sido fuertemente reprimidos, y la acción política de protesta dejó de ser
+						tan directa. En sus inicios, el hip-hop no era un movimiento político, sino que una simple forma 
+						de pasar el tiempo para una sociedad sumergida en dolor y miseria. Durante la presidencia de Richard
+						Nixon, se hablaba de negligencia, y la construcción del Cross Bronx Expressway destruyó una gran 
+						cantidad de vecindades negras, cuya población tuvo que desplazarse hacia Brooklyn Este y el Bronx 
+						Sur, donde las condiciones eran precarias. Fueron estos problemas los que marcaron a una juventud 
+						entera en los ‘70s, que simplemente dejó a sus emociones salir a la hora de producir arte,
+						involuntariamente convirtiéndose en una acción política más indirecta que la de los grupos de la 
+						década pasada. (Laurence, 2023) Según el DJ Charlie Chase, que aportó sus experiencias al relato 
+						histórico de Jonathan Abrams <em>The Come Up: Historia Oral del Hip Hop,</em> “el Bronx [a 
+						finales de los sesenta y en los setenta] era el epicentro de la pobreza, el epicentro de chicos
+						que no sabían qué hacer con su rebosante energía, porque no tenían muchas actividades a su alcance 
+						ni modelos a seguir.” Similarmente, otro artista llamado MC Debbie B agregó al relato que “el
+						ambiente del sur del Bronx estaba invadido por la pobreza: crímenes, bandas, mafiosos de la droga, 
+						edificios abandonados por todas partes. Por eso decían que el Bronx estaba ardiendo. Y no se invertía
+						en lugares que fueran seguros para los jóvenes. Así que en cuanto se oía algo de música, muchísimos
+						chicos se acechaban. No teníamos otra cosa que hacer.” (Abrams, 2025)</p>
+						<p>DJ Kool Herc era uno de estos jóvenes que buscaba un momento de diversión en la música y las
+						fiestas; hijo de un técnico para una banda local y coleccionista aficionado, Herc tenía acceso a 
+						equipos de sonido que le permitieron organizar sus famosas fiestas donde experimentaba con nuevas 
+						técnicas para lograr que sus multitudes bailaran. Organizaba fiestas en casas donde usaba dos 
+						tocadiscos para extender breaks de la manera que explicamos en la sección anterior, incorporando
+						también un aspecto crucial de la cultura jamaiquina: el <em>toasting</em>. El toasting, una especie 
+						de mezcla entre hablar y cantar rítmicamente, era practicado por los MCs de Jamaica, una práctica 
+						que luego evolucionaría en lo que hoy conocemos como rap. Herc tomaba en cuenta el hecho de que
+						la gente en sus fiestas bailaba más cuando había breaks, y era por eso que intentaba extenderlos. 
+						Hacía uso también de piezas instrumentales, como fue el caso de las creaciones de The Incredible
+						Bongo Band, con sus canciones <u><em>
+						<span class="audio-link" onclick="toggleAudio('bongorock')">
+						Bongo Rock
+						</span>
+						</em></u> y <u><em>
+						<span class="audio-link" onclick="toggleAudio('apache')">
+						Apache
+						</span>
+						</em></u>
+						a modo de ejemplo. (Laurence, 2023)</p>
+						<audio id="bongorock" src="music/bongorock.m4a"></audio>
+						<audio id="apache" src="music/apache.m4a"></audio>
+						<p>Para fines de 1973, las fiestas de DJ Kool Herc eran tan grandes que tuvo que moverse a espacios
+						más amplios como clubes. Para 1977, cuando su fama comenzó a aplacarse, se abrió el paso a los dos
+						otros DJs que formarían la llamada “Santa Trinidad” del hip-hop, Afrika Bambaataa y Grandmaster 
+						Flash. (Laurence, 2023) Afrika Bambaataa, también conocido como “el Padrino”, fue en su momento un
+						DJ y productor musical que organizó fiestas en el Bronx. Su mensaje para la juventud era sumamente 
+						positivo, ya que buscaba alejarlos de la vida pandillera, las drogas y la violencia. Fue responsable
+						de la creación de Universal Zulu Music, una organización orientada a la música cuyo propósito era
+						fomentar la paz y unidad a través de las diferentes expresiones de la cultura del hip-hop. Bambaataa
+						fue quien sugirió cuatro de los elementos del hip-hop mencionados en nuestra definición. 
+						(PQ, 2023)</p>
+						<p>Grandmaster Flash es conocido en gran parte por haber sido responsable por la creación de la técnica
+						de <em>needle dropping</em> que Kool Herc usaba en sus fiestas para extender los breaks, que luego, en 
+						la forma del <em>scratching</em> explicado en la sección anterior, se convirtió en uno de los detalles
+						más sobresalientes de la música hip-hop. (Tate, 2025) Fue el primero en manipular sus discos hacia atrás,
+						y hacía acrobacias extrañas en sus shows, como manejar los discos con sus pies. En 1976, organizó una 
+						banda llamada Grandmaster Flash and the Furious Five, cuyo estilo era único en la combinación de sus 
+						habilidades de DJ con batallas de rap en los versos. Su innegable talento e influencia lo posicionó 
+						en el <em>Rock and Roll Hall of Fame</em> en 2007. (PQ, 2023)</p>
+						
+												<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://www.djkoolherc.com/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pic09.jpg" alt="" /></a>
+										<header>
+											<h3>DJ Kool Herc</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://grandmasterflash.com/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pic10.jpg" alt="" /></a>
+										<header>
+											<h3>Grandmaster Flash</h3>
+										</header>
+									</article>
 								</div>
-							</form>
-
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://open.spotify.com/artist/7cg61q8kK8jlFi8TKKw70p" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pic11.jpg" alt="" /></a>
+										<header>
+											<h3>Afrika Bambaataa</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://www.publicenemy.com/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pic12.jpg" alt="" /></a>
+										<header>
+											<h3>Public Enemy</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://beastieboys.com/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pic13.jpg" alt="" /></a>
+										<header>
+											<h3>Beastie Boys</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://www.llcoolj.com/" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pic14.jpg" alt="" /></a>
+										<header>
+											<h3>LL Cool J</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+						<p></p>	
+						<p>Un hito de la historia del hip-hop que no se menciona con frecuencia sucedió en el verano de 1977,
+						donde una ola de calor azotó a la ciudad de Nueva York. El 13 de julio, una tormenta acabó de
+						desestabilizar la red eléctrica que ya estaba sobrecargada, dejando a muchos neoyorquinos sin
+						electricidad. En medio de la oscuridad, la gente comenzó a salir a las calles y saquear negocios, que
+						según investigaciones posteriores por parte del Congreso, causó daños y pérdidas de más de 300 millones
+						de dólares. A pesar del caos y la tragedia del suceso, muchos jóvenes tuvieron la oportunidad de saquear 
+						tiendas de electrónica, donde ganaron acceso por primera vez a aparatos de música. Con pocas ganas de 
+						volver a sus departamentos en pisos altos sin ascensores en funcionamiento, mucha gente se quedó afuera,
+						disfrutando de la compañía de sus vecinos. En medio de la violencia y el descontento, la gente del Bronx
+						también logró unirse. Si bien este hecho no fue el único catalista del hip-hop, es verdad que aceleró el
+						proceso de su propagación y desarrollo al brindar más herramientas creativas a la juventud. 
+						(Abrams, 2025)</p>
+						<p>En los ‘70s, el hip-hop fue principalmente dominado por letras enfocadas en problemas sociales, 
+						convirtiéndose en una plataforma para que las voces afroamericanas pudieran ser escuchadas. 
+						(Laurence, 2023) En 1979, se grabó la canción hoy conocida como la primera grabación de hip-hop: <u><em>
+						<span class="audio-link" onclick="toggleAudio('rappersdelight')">
+						Rapper’s Delight
+						</span>
+						</em></u>
+						de The Sugarhill Gang, un éxito que llegaría a las <a href="https://web.archive.org/web/20160427180238/http://www.billboard.com/charts/hot-100/1980-01-12" target="_blank" rel="noopener noreferrer">listas Billboard</a>
+						al número 36 pocas semanas después de su lanzamiento. </p>
+						<audio id="rappersdelight" src="music/rappersdelight.m4a"></audio>
+						<p>En los ‘80, los artistas empezaron a hacer uso de sus cuerpos para producir música - se trataba del 
+						<em>beatboxing,</em> la creación de sonidos usando los labios, la lengua o la boca entera, liderado 
+						por los pioneros Biz Markie y Doug E. Fresh. (Laurence, 2023) En 1982, Grandmaster Flash, junto a su 
+						banda The Furious Five, lanzó su canción <u><em>
+						<span class="audio-link" onclick="toggleAudio('themessage')">
+						The Message,
+						</span>
+						</em></u>
+						una de las canciones más influyentes del hip-hop, hablando en detalle sobre la vida en los guetos y 
+						transmitiendo conciencia al público de aquel momento. (Tate, 2025) El mismo año, Afrika Bambaataa y
+						su grupo the Soul Sonic Force lanzaron <u><em>
+						<span class="audio-link" onclick="toggleAudio('planetrock')">
+						Planet Rock,
+						</span>
+						</em></u>						
+						cuya influencia en los primeros años del hip-hop fue también indisputable. (PQ, 2023) Este período, 
+						conocido como la “nueva escuela”, vio el surgimiento de otros artistas que ayudaron al hip-hop a 
+						convertirse en parte de la música mainstream. Run-D.M.C., un trío de jóvenes afroamericanos de clase
+						media, fue catapultado a la fama por su inteligente combinación de rap con rock pesado, incluyendo
+						éxitos como su reversión hip-hop de <u><em>
+						<span class="audio-link" onclick="toggleAudio('walkthisway')">
+						Walk This Way de Aerosmith,
+						</span>
+						</em></u>						
+						que llegó al <a href="https://web.archive.org/web/20160204120235/http://www.billboard.com/charts/hot-100/1986-09-27" target="_blank" rel="noopener noreferrer">puesto #4 de las listas</a>
+						en septiembre de 1986. En esta misma década, se fundó la discográfica Def Jam, que trajo innovación
+						al mundo del hip-hop a través de sus artistas más influyentes:</p>
+						<ul>
+							<li>LL Cool J, la primera estrella de hip-hop romántico;</li>
+							<li>Beastie Boys, que popularizaron el uso de fragmentos musicales digitales y expandieron el público de la música rap;</li>
+							<li>y Public Enemy, que se destacó por expresar ideología radical negra en sus canciones.</li>
+						</ul>
+						<audio id="themessage" src="music/themessage.m4a"></audio>
+						<audio id="planetrock" src="music/planetrock.m4a"></audio>
+						<audio id="walkthisway" src="music/walkthisway.m4a"></audio>
+						<p>Fue en los ‘80s también que comenzaron a obtener popularidad las artistas femeninas en el hip-hop, 
+						que ofrecían una perspectiva alternativa en comparación a las temáticas misóginas que solían aparecer 
+						en el mundo del rap de aquel entonces. Artistas como Queen Latifah y Salt-N-Peppa sirvieron como 
+						inspiración para las docenas de raperas femeninas que dominarían la escena en la década siguiente. 
+						(Tate, 2025)</p>
+						<p>Los ‘80s, a su vez, marcaron la emergencia de artistas de hip-hop fuera de la ciudad de Nueva York.
+						Algunos ejemplos notorios fueron Will Smith, originario de Philadelphia, 2 Live Crew, un grupo formado
+						en Miami, y el legendario M.C. Hammer, proveniente de California. De hecho, fue en Los Ángeles que 
+						apareció la competencia más fuerte para el rap neoyorquino, en un principio con la explosión de 
+						N.W.A. en 1989 con su álbum clásico <em>Straight Outta Compton.</em> Esta banda, compuesta por artistas como
+						Eazy E, Ice Cube y Dr. Dre, le abrió el paso a sus respectivas carreras solistas exitosas en los ‘90s.
+						El rap de la Costa Oeste, popularizado parcialmente por estos artistas, se convirtió en una especie
+						de antagonista a la música de la Costa Este, una problemática que marcaría la década por venir. 
+						(Tate, 2025)</p>
+						<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0Y7qkJVZ06tS2GUCDptzyW?utm_source=generator"
+						width="100%" height="352" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+						loading="lazy"></iframe>
+						<p>La primera mitad de los ‘90s fue entonces notable por la rivalidad entre dos cunas de música hip-hop.
+						El rap de la Costa Oeste, dentro del cual nació el llamado <em>gangsta rap,</em> traía a la mesa 
+						letras repletas de relatos violentos de la ciudad de Los Ángeles. Dr. Dre formó parte de la nueva 
+						discográfica <em>Death Row Records,</em> junto con otros raperos como Snoop Dogg y 2 Pac, que mantendrían
+						su relevancia cultural hasta el día de hoy. Tal fue su éxito, que se enfrentó directamente con 
+						<em>Bad Boy Records,</em> la discográfica neoyorquina predominante del momento. La enemistad fue tan 
+						fuerte que hasta el día de hoy se atribuye a esta rivalidad nada más ni nada menos que los asesinatos
+						de 2 Pac y The Notorious B.I.G. (Tate, 2025) </p>
+						<p>El hip-hop de los ‘90s tuvo un efecto incalculable sobre la industria de la música en general. Desde sus
+						inicios, el hip-hop usaba muchos fragmentos de otras canciones para construir sus bases, sobre todo porque
+						no existían legislaciones para regular esta práctica. Sin embargo, con la explosión del hip-hop en esta 
+						década, varios artistas comenzaron a reclamar compensación monetaria por el uso de sus obras para producir 
+						otras piezas. Estos reclamos tuvieron la consecuencia directa de la creación de varias leyes de cumplimiento
+						de los derechos de autor, que obligaron a los artistas de hip-hop a apoyarse menos sobre otras piezas. 
+						Fue así que el hip-hop comenzó a perder muchas de sus influencias de jazz y soul. (PQ, 2023)</p>
+						<p>La última mitad de los ‘90s estuvo dominada artísticamente por un núcleo más amplio de artistas. En un
+						principio, se encontraba el Wu Tang Clan de Staten Island, que logró combinar un alto nivel de credibilidad 
+						callejera con aspectos del kung-fu, dando lugar a una banda con gran complejidad. Diddy, rapero y productor,
+						tuvo gran influencia sobre la industria debido a que era el presidente de <em>Bad Boy Records.</em> The Fugees
+						era un grupo que mezclaba estribillos pop con raps políticos en los versos, y lanzó las carreras solistas de
+						artistas trascendentes como Wyclef Jean y Lauryn Hill. En 1997, Missy Elliot lanzó su exitoso álbum 
+						<em>Supa Dupa Fly,</em> producido por el legendario productor Timbaland. Fue a finales de esta década que el
+						hip-hop se volvió el género más vendido de música popular en Estados Unidos y comenzó a tener un impacto 
+						global. (Tate, 2025)</p>
+						<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6UkdyvPElK6JDkyeRClbI2?utm_source=generator" 
+						width="100%" height="352" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+						loading="lazy"></iframe>
+						<p></p>
+						
 						</div>
 					</section>
